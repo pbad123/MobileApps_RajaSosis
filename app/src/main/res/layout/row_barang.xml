@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/biru_tua"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+            <ImageView
+                android:id="@+id/fotoBarangR"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/namaR"
+                android:textColor="@color/merah_baru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Nama Barang"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/jumlahR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih_labil"
+                android:text="Jumlah Barang"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="105dp"/>
+            <TextView
+                android:id="@+id/hargaR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih_labil"
+                android:text="Harga Barang"
+                android:layout_marginTop="41dp"
+                android:layout_marginLeft="105dp"/>
+            <TextView
+                android:id="@+id/beliR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih_labil"
+                android:text="Harga Beli"
+                android:layout_marginTop="58dp"
+                android:layout_marginLeft="105dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih_labil"
+                android:layout_marginTop="24dp"
+                android:text="Stok Barang\t\t: "/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih_labil"
+                android:layout_marginTop="41dp"
+                android:text="Harga Barang\t: "/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih_labil"
+                android:layout_marginTop="58dp"
+                android:text="Harga Beli\t\t\t\t: "/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_panah_kanan"
+                android:background="#00000000"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

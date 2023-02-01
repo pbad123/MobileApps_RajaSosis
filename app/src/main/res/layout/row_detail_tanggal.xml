@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    app:cardBackgroundColor="@color/colorPrimary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/tanggalDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/questa_sans_regular"
+            android:textColor="@color/merah_baru"/>
+        <TextView
+            android:id="@+id/idTanggalDT"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tanggalDT"
+            android:text="ID Tanggal"
+            android:textColor="@color/putih_labil"
+            android:fontFamily="@font/questa_sans_regular"/>
+        <TextView
+            android:id="@+id/textDT"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idTanggalDT"
+            android:text="Jumlah Stok\t\t:"
+            android:textColor="@color/putih_labil"
+            android:fontFamily="@font/questa_sans_regular"/>
+        <TextView
+            android:id="@+id/stokDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idTanggalDT"
+            android:layout_toRightOf="@+id/textDT"
+            android:text="Jumlah"
+            android:textColor="@color/putih_labil"
+            android:fontFamily="@font/questa_sans_regular"/>
+        <ImageButton
+            android:id="@+id/btnHapusDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hapus"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

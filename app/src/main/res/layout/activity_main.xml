@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="69dp"
+    android:orientation="vertical"
+    android:background="@color/putih_labil"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/merah_baru">
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/questa_sans_regular"
+            android:hint="Username"
+            android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/biru_tua"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/questa_sans_regular"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/questa_sans_regular"
+        android:layout_marginTop="55dp"
+        android:text="Login"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/gradient"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/questa_sans_regular"
+        android:layout_marginTop="15dp"
+        android:text="Register"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/gradient2"
+        android:textColor="@color/white"/>
+</LinearLayout>

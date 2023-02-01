@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/putih_labil"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="12dp"
+    android:padding="8dp"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp">
+            <ImageView
+                android:id="@+id/fotoBarangP"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/namaP"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Nama Barang"
+            android:textColor="@color/merah_baru"
+            android:fontFamily="@font/questa_sans_regular"/>
+        <TextView
+            android:id="@+id/jumlahP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stok Barang"
+            android:textColor="@color/hitam"
+            android:fontFamily="@font/questa_sans_regular"/>
+        <TextView
+            android:id="@+id/hargaP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga Barang"
+            android:textColor="@color/hitam"
+            android:fontFamily="@font/questa_sans_regular"/>
+        <Button
+            android:id="@+id/tambahKeranjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient2"
+            android:drawableLeft="@drawable/ic_tambah_keranjang"
+            android:paddingLeft="8dp"
+            android:hint="Keranjang"
+            android:textColorHint="@color/putih_labil"
+            android:fontFamily="@font/questa_sans_regular"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

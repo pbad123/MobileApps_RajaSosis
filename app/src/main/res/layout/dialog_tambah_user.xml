@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/gradient2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:text="Tambah Member"
+        android:textAlignment="center"
+        android:background="@drawable/background_biru_tua"
+        android:fontFamily="@font/questa_sans_regular"
+        android:textColor="@color/merah_baru"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/putih_labil">
+            <EditText
+                android:id="@+id/tambahNamaU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nama Member"
+                android:fontFamily="@font/questa_sans_regular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/merah_baru">
+            <EditText
+                android:id="@+id/tambahNomorU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Nomor Telepon"
+                android:fontFamily="@font/questa_sans_regular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/putih_labil">
+            <EditText
+                android:id="@+id/tambahEmailU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint='Email ( " - " ) Kalau Tidak Ada'
+                android:fontFamily="@font/questa_sans_regular"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/simpanDataUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:text="Simpan"
+            android:background="@drawable/gradient"
+            android:textColor="@color/putih_labil"
+            android:fontFamily="@font/questa_sans_regular"/>
+    </LinearLayout>
+</RelativeLayout>
