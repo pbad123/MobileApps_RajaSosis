@@ -89,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Simpan"
-            android:textColor="@color/putih_labil"
+            android:textColor="@color/white"
             android:background="@drawable/gradient2"
             android:fontFamily="@font/questa_sans_regular"/>
     </LinearLayout>
